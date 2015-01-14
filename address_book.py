@@ -7,7 +7,7 @@ def process_file_object(file_object):
    
     for lines in file_object:
         lines = lines.strip().split(',')
-        dict_address_obj[lines[0], lines[1]]= [lines[3], lines[4], lines[5], lines[6]]
+        dict_address_obj[lines[0], lines[1]]= [lines[2], lines[7]]
 
 
     print dict_address_obj
@@ -17,6 +17,9 @@ def main():
     file_address_object = open("address.csv")
     process_file_object(file_address_object)
 
+
+
+# lines[4], lines[5], lines[6], omitted because too much information at the moment
 if __name__ =="__main__":
     main()
 
