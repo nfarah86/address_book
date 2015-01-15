@@ -1,5 +1,5 @@
 #main-parent{
-	padding: 10px 50px 10px 50px;
+	padding: 10px 0 0 50px;
 }
 
 
@@ -20,6 +20,19 @@ table{
 	background-color: gray;
 }
 
+
+#main-parent-form .parent-button-wrapper .button-submit, #main-parent-form .parent-button-wrapper .button-remove{
+	background-color: red;
+	display: inline-block;
+}
+
+#main-parent-form .parent-button-wrapper {
+	padding:110px;
+}
+
+#main-parent-form .parent-button-wrapper .field{
+	padding:1px;
+}
 
 /*.item-text{
 	background-color: red;
