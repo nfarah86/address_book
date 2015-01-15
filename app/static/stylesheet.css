@@ -1,17 +1,53 @@
+#main-parent{
+	padding: 10px 50px 10px 50px;
+}
+
+
 h1 {
 	background-color: yellow;
+	text-align: center;
+	width:50%;
+	margin-left: 400px
 }
 
 table{
 	background-color:green;
 }
-.item-text{
+
+
+#main-parent-form label, #main-parent-form .field{
+	display: inline-block;
+	background-color: gray;
+}
+
+
+
+
+
+
+/*.item-text{
 	background-color: red;
+	float:left;
+	width:80%;
+	display:inline-block;
 }
 .field{
 	background-color: purple; 
+	margin-left:400px;
+	text-align: center;
+	width:100%;
+	display: inline-block;
 }
 
-#main-contact-form{
+#main-parent-form{
 	background-color: orange;
 }
+
+.parent-button-wrapper{
+	width: 50%;
+	position:relative;
+}
+.field{
+	width:50%;
+	float:right;
+}*/
