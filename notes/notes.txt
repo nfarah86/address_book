@@ -1,0 +1,44 @@
+What I learned from making this app:
+
+1) CSS and inline-block
+
+	a) 
+
+	<form id = main-parent-form>
+
+	<div class = "items">
+		<label> Email </label>
+		<input type = 'text' name = 'email'/> 
+		
+	</div>
+	</form>
+
+	vs. 
+
+	b)
+
+	<form id = main-parent-form>
+	<div class = "item-text">
+		<label> Email </label>
+			<div class = 'field'><input type = 'text' name = 'email'/> 
+			</div>
+	</div>
+	</form>
+
+	*** this difference between a and b is the divs... first one- a) wraps everything in one div... the second example: b) has two divs: one for the label and one for the field..
+
+	problem: how to get ie:  Email : <<text field>> aligned in one line.  Initally, I attacked this with targeting ie .item-text or .field...with display: inline-block or created separate css fields that attacked one or the other...
+
+	how the problem was solved:
+
+
+	#main-parent-form label, #main-parent-form .field{
+	display: inline-block;
+	background-color: gray;
+}
+	==>here i reference EACH DIV that I want to be inline-block..
+
+	this is different from a) example because, it has one div, so you can just do .items{ display: inline-block} and that would solve that problem. 
+
+
+
