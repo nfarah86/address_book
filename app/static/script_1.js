@@ -24,7 +24,7 @@ document.getElementById("myBtn").addEventListener("click", function (e){
 		  				// FORM SETUP  //
 		
 		contact.$form.reset();
-			document.getElementById("button_remove").addEventListener("click", function (e){
+			document.getElementById("button_remove").addEventListener("click", function (event){
 			contact.$form.reset();
 			contact.$form.id_entry = 0;
 			alert("bye");
@@ -32,7 +32,7 @@ document.getElementById("myBtn").addEventListener("click", function (e){
 
 
 
-		document.getElementById("button-submit").addEventListener("click", function (e){
+		document.getElementById("button-submit").addEventListener("click", function (event){
      		alert("hi");
 
 			var entry = {
@@ -61,20 +61,48 @@ document.getElementById("myBtn").addEventListener("click", function (e){
 
 	}
 
+	
+			// TABLE // 
+
+	// if(window.localStorage.length -1){
+	// 	var contacts_list = [], i, key;
+	// 	for (i=0; i < window.localStorage.length; i++){
+	// 		key = window.localStorage.key(i);
+	// 		if(/Contacts:\d+/.test(key)){
+	// 			contact_list.push(JSON.parse(window.localStorage.getItem(key)));
+	// 		}
+	// 	}
+	
+	// 	if (contacts_list.length){
+	// 		contacts_list.sort(function(a,b){
+	// 		return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0);
+	// 		})
+	// 		.forEach(contact.tableAdd);
+	// 	}
+	// }
 
 
+	//another table function....
 
 
+	// contact.$table.addEventListener("click", function(event){
+	// 	var op = event.target.getAttribute("data-op");
+
+	// })
 
 
- 
+	
+					// START HERE!!!!!  // 
 
 
+					
 
 	// contactAdd: function(entry) {
-	// 	entry.id = contactObject.index;
-	// 	window.localStorage.setItem("Contacts: index", ++contactObject.index);
+	// 	entry.id = contact.index;
+	// 	window.localStorage.setItem("Contacts: index", ++contact.index);
 	// },
+
+
 // 	contactEdit: function(entry) {},
 // 	contactRemove: function(entry) {},
 
@@ -99,9 +127,6 @@ document.getElementById("myBtn").addEventListener("click", function (e){
 		// 		window.localStorage.setItem("Contacts: index", Contacts.index = 1);
 		// }
 	
-
-
-		//INTALIZE FORM 
 
 
 
