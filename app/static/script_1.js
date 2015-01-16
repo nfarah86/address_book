@@ -1,4 +1,4 @@
-alert("hi"); 
+//alert("hi"); 
 
 document.getElementById("myBtn").addEventListener("click", function (e){
     alert("hi");
@@ -95,7 +95,7 @@ document.getElementById("myBtn").addEventListener("click", function (e){
 					// START HERE!!!!!  // 
 
 
-					
+
 
 	// contactAdd: function(entry) {
 	// 	entry.id = contact.index;

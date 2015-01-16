@@ -14,6 +14,9 @@ table{
 	background-color:green;
 }
 
+#list-contacts #lead-contact th{
+	padding-left: 10px;
+}
 
 #main-parent-form label, #main-parent-form .field{
 	display: inline-block;
@@ -22,9 +25,33 @@ table{
 
 
 #main-parent-form .parent-button-wrapper .button-submit, #main-parent-form .parent-button-wrapper .button-remove{
-	background-color: red;
-	display: inline-block;
+  width: 10%;
+  display:inline-block;
 }
+
+
+#main-parent-form .parent-button-wrapper .button-submit #submit, #main-parent-form .parent-button-wrapper .button-remove #remove{
+	  background: #101f29;
+	  background-image: -webkit-linear-gradient(top, #101f29, #04131c);
+	  background-image: -moz-linear-gradient(top, #101f29, #04131c);
+	  background-image: -ms-linear-gradient(top, #101f29, #04131c);
+	  background-image: -o-linear-gradient(top, #101f29, #04131c);
+	  background-image: linear-gradient(to bottom, #101f29, #04131c);
+	  -webkit-border-radius: 11;
+	  -moz-border-radius: 11;
+	  border-radius: 11px;
+	  font-family: Georgia;
+	  color: #c4acc4;
+	  font-size: 8px;
+	  padding: 3px 4px 3px 4px;
+	  text-decoration: none;
+}
+
+#main-parent-form .parent-button-wrapper .button-submit #submit:hover , #main-parent-form .parent-button-wrapper .button-remove #remove:hover {
+  background: #a10f75;
+  text-decoration: none;
+}
+
 
 #main-parent-form .parent-button-wrapper {
 	padding:10px;
